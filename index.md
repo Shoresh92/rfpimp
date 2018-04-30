@@ -28,7 +28,7 @@ Please note this post is a summary of the feature importance topic discussed in 
   * Gini Index: the improvement in the "Gini gain" splitting criterion.
   * Permutation Significance: the permutation accuracy importance measure.
 
-#### Feature Importance in RF Is Biased
+#### Feature Importance in Random Forest Is Biased
 * RF variable importance measures are not reliable in situations where
   * predictor variables vary in their scale of measurement and/or
   * predictor variables vary in their number of categories
@@ -92,7 +92,6 @@ Please note this post is a summary of the feature importance topic discussed in 
 
 * The major drawback of this method is the requirement of time-consuming permutations of the response vector and subsequent computation of feature importance. Simulations showed that around 10 permutations provides improvements over a biased base method. For stability of the results any number from 50 to 100 permutations is recommended.
 
-
 ### In Practice
 * This is the order of steps I take
   * Drop-out importance is my first choice if the feature space is small and the approach is computationally affordable.
@@ -107,4 +106,6 @@ Please note this post is a summary of the feature importance topic discussed in 
   * Drop-column Feature Importance:
   `def dropcol_importances(rf, X_train, y_train)`
   
-  * Final Note: currently dealing with a small feature space, I used drop-column importance and observed a significant imrovements in results. More on Lead Scoring project later.
+* Final Note: currently dealing with a small feature space, I used drop-column importance and observed a significant imrovements in results. More on Lead Scoring project later.
+
+[Back to the Main Page](https://shoresh92.github.io)
