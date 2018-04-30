@@ -107,4 +107,4 @@ Please note this post is a summary of the feature importance topic discussed in 
   * Drop-column Feature Importance:
   `def dropcol_importances(rf, X_train, y_train)`
   
-  Final Note: currently dealing with a small feature space, I used drop-column importance and observed a significant imrovements in results. More on Lead Scoring project later. 
+  * Final Note: currently dealing with a small feature space, I used drop-column importance and observed a significant imrovements in results. More on Lead Scoring project later.
